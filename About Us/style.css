@@ -8,6 +8,7 @@
 }
 
 * {
+  z-index: -1;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -32,7 +33,7 @@ body {
 }
 .navbar a {
   color: black;
-  padding: 14px 20px;
+  padding: 14px 25px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
@@ -44,9 +45,10 @@ body {
 
 .navbar div {
   display: flex;
-  z-index: 1;
+  z-index: 2;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 5px;
@@ -68,12 +70,20 @@ body {
   margin-right: 30px;
 }
 
+.logo a {
+  position: absolute;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 14px;
+  margin: 0px 20px;
+}
+
 .logo img {
-  width: 100px; /* Adjust the width as needed */
+  width: 5vw; /* Adjust the width as needed */
   height: auto;
   padding-top: 8vh;
-  display: absolute;
   z-index: 3;
+  margin: 0px 20px;
 }
 
 .footer {
@@ -108,7 +118,42 @@ body {
 
 .info {
   font-family: "Inter", sans-serif;
-  user-select: none;
+  z-index: -10;
+}
+
+.logoSmall {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.3s ease-in-out 0.7s;
+}
+
+.logoLarge {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.3s ease-in-out 0.7s;
+}
+
+.logoSmallAnimate {
+  opacity: 1;
+  transform: translateY(-2.75vh) translateX(2px) scale(0.8);
+}
+
+.logoLargeAnimate {
+  opacity: 0;
+  transform: translateY(-2.75vh) translateX(2px) scale(0.8);
+  animation: fadeOut 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -135,6 +180,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 3vh;
+  z-index: -1;
 }
 
 .listElements {
@@ -144,6 +190,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .listName {
@@ -165,8 +212,8 @@ body {
   overflow: hidden;
 }
 
-.test {
-  z-index: 1;
+.zIndex {
+  z-index: 1 !important;
 }
 
 .none {

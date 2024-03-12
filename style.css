@@ -121,34 +121,6 @@ body {
   z-index: -10;
 }
 
-::-webkit-scrollbar {
-  width: 0px;
-}
-
-.container {
-  width: 100vw;
-  height: 120vh;
-  position: relative;
-  transform: translate(-50%, -52%);
-  top: 50%;
-  left: 50%;
-  overflow: hidden;
-  top: 56vh;
-}
-.wrapper {
-  width: 100%;
-  display: flex;
-  animation: slide 32s infinite;
-}
-
-img {
-  width: 100%;
-}
-
-.content {
-  height: 100vh;
-}
-
 .logoSmall {
   opacity: 1;
   transform: translateY(0) scale(1);
@@ -184,4 +156,34 @@ img {
     opacity: 0;
   }
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.container {
+  width: 100vw;
+  height: 120vh;
+  position: relative;
+  transform: translate(-50%, -52%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  top: 56vh;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  animation: slide 32s infinite;
+}
+
+img {
+  width: 100%;
+}
+
+.content {
+  height: 100vh;
+}
+
+
 
