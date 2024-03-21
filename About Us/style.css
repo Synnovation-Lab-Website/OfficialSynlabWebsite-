@@ -1,14 +1,13 @@
 :root {
-  --black: #282a35ff;
+  --black: rgb(52, 52, 52);
   --green: #00693eff;
   --gold: #ffd200ff;
-  --gray: #a9b2acff;
+  --gray: rgb(235, 235, 235);
   --teal: #489fb5ff;
   --cream: #f2f2f2;
 }
 
 * {
-  z-index: -1;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -19,6 +18,7 @@ body {
   padding: 0;
   background-color: #f2f2f2;
   overflow-x: hidden;
+  font-family: "Inter", sans-serif;
 }
 
 .navbar {
@@ -36,7 +36,7 @@ body {
   padding: 14px 25px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: calc(0.75vw + 0.75vh + 0.25vmin);
   letter-spacing: 2px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -95,18 +95,23 @@ body {
   width: 100%;
   z-index: 2;
   bottom: 0;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 .footer a {
   color: black;
   padding: 14px 20px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: calc(0.75vw + 0.75vh + 0.25vmin);
   letter-spacing: 2px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
 }
-
+.footerSpacer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .footer div {
   display: flex;
   z-index: 2;
@@ -114,6 +119,10 @@ body {
   align-items: center;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.footer-social i {
+  font-size: calc(1.3vw + 1.3vh + 0.5vmin);
 }
 
 .info {
@@ -161,16 +170,11 @@ body {
 }
 
 .title {
-  font-size: 50px;
+  font-size: calc(2vw + 2vh + 1vmin);
   font-weight: 700;
-  padding-top: 17vh;
+  padding-top: 7vh;
   margin-bottom: 6vh;
   text-align: center;
-}
-
-.bioImage {
-  object-fit: fill;
-  max-width: 100%;
 }
 
 .list {
@@ -181,8 +185,12 @@ body {
   align-items: center;
   margin-top: 3vh;
   z-index: -1;
+  overflow: hidden;
 }
-
+.list a {
+  cursor: default;
+  overflow: hidden;
+}
 .listElements {
   padding-left: 3vw;
   padding-right: 3vw;
@@ -191,19 +199,37 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  transition: 0.3s cubic-bezier(0.44, 0.4, 0.26, 0.7);
+  overflow: hidden;
+}
+
+.listElements:hover {
+  transform: scale(1.03);
+  transition: 0.3s cubic-bezier(0.44, 0.4, 0.26, 0.7);
+  overflow: hidden;
 }
 
 .listName {
-  font-size: 36px;
+  font-size: calc(1vw + 1vh + 0.25vmin);
   font-weight: 600;
   margin-top: 10px;
   color: black;
   text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.listName p {
+  font-weight: 400;
+  text-align: center;
+  overflow: hidden;
 }
 
 .spacer {
   width: 10vw;
   margin-left: 5vw;
+  overflow: hidden;
 }
 
 .imgWraper {
@@ -219,4 +245,190 @@ body {
 .none {
   color: rgba(0, 0, 0, 0) !important;
   background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#logoTop {
+  padding-top: 20vh;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+.underDescription {
+  font-size: calc(1vw + 1vh + 0.25vmin);
+  font-weight: 400;
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+  text-align: center;
+}
+.underDescription p {
+  padding-top: 2vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.underDescription div {
+  padding-top: 2vh;
+}
+
+.list {
+  cursor: pointer;
+}
+
+.pillars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.pillars button {
+  z-index: 1 !important;
+}
+
+.pillars span {
+  z-index: 1 !important;
+}
+
+.button-48 {
+  appearance: none;
+  background-color: var(--cream);
+  border-width: 1px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson, Helvetica, sans-serif;
+  font-size: calc(1vw + 1vh + 0.5vmin);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 3vh 2vw;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #e0e0e0;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: var(--cream);
+}
+
+.button-48 span {
+  position: relative;
+}
+.popUp {
+  opacity: 0;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--gray);
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  transition: opacity 0.7s;
+}
+.x {
+  position: absolute;
+  top: 5vh;
+  right: 3vw;
+  font-size: 40px;
+  z-index: -1;
+  transition: 0.3s cubic-bezier(0.44, 0.4, 0.26, 0.7);
+}
+
+.x:hover {
+  color: var(--black);
+  transform: scale(1.03);
+  transition: 0.3s cubic-bezier(0.44, 0.4, 0.26, 0.7);
+}
+
+.bioImage {
+  object-fit: fill;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.bioImagePopUp {
+  object-fit: fill;
+  max-width: 100%;
+}
+.imageWraper {
+  width: 27vw;
+  height: auto;
+  overflow: hidden;
+}
+
+.wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.bioText {
+  font-family: "Inter", sans-serif;
+  font-size: calc(1vw + 1vh + 0.5vmin);
+  padding-left: 2vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+  width: 65vw;
+}
+
+.bioText p {
+  padding-top: 2vh;
+  padding-left: 5vw;
+}
+
+#line {
+  width: 4vw;
+  border-top: 3px solid black;
+  position: absolute;
+}
+
+#name {
+  font-size: calc(3vw + 3vh + 1vmin);
+  font-weight: 600;
+  margin-top: -15vh;
+  text-decoration: none;
+  align-items: center;
+  position: absolute;
+  font-family: "Inter", sans-serif;
 }

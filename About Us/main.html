@@ -16,8 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/243589e6ae.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
+  <body id="body">
     <header>
       <nav class="navbar">
         <div class="navLink"><a ahref="../Scedule/main.html">schedule</a></div>
@@ -28,7 +32,7 @@
               ><img src="../assets/logo.svg" alt=""
             /></a>
             <a class="logoSmall" href="../main.html"
-              ><img src="../assets/logoSmall.svg" alt=""
+              ><img src="../assets/logoSmall.svg" alt="Synnovation Lab Logo"
             /></a>
           </div>
         </div>
@@ -36,11 +40,43 @@
         <div class="navLink"><a href="../Merch/main.html">Merch</a></div>
       </nav>
     </header>
-
+    <div id="logoTop"><img src="../assets/LogoPlaceholder.png" alt="" /></div>
+    <div class="underDescription">
+      <div><h1>Sycamore + Innovation</h1></div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi
+        id nobis praesentium explicabo ad eos autem suscipit numquam doloribus
+        earum perferendis voluptates beatae porro, corporis commodi eaque
+        perspiciatis adipisci? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Cupiditate odit possimus ducimus excepturi, esse, qui
+        laboriosam totam doloribus debitis quas adipisci molestiae consequuntur,
+        exercitationem repellendus nulla saepe fuga sint neque? Lorem ipsum
+        dolor sit, amet consectetur adipisicing elit. Dolore nemo exercitationem
+        cum suscipit saepe ratione hic aut animi facilis quae. Maiores
+        praesentium recusandae, perspiciatis vitae quisquam voluptates odio quod
+        adipisci.
+      </p>
+    </div>
+    <div class="pillars">
+      <button
+        class="button-48"
+        role="button"
+        onclick="searchTitleInJSON('test/popUpInfo.json', 'sections', 'Arnold')"
+      >
+        <span class="text">Personalization</span>
+      </button>
+      <button class="button-48" role="button" onclick="alert('test')">
+        <span class="text">Community</span>
+      </button>
+      <button class="button-48" role="button" onclick="alert('test')">
+        <span class="text">Meaningful Learning</span>
+      </button>
+    </div>
     <div class="info">
-      <h1 class="title">The Team</h1>
+      <h1 class="title">Meet the Team</h1>
+
       <div class="list">
-        <a class="listName zIndex" href="./BioPages/Arnold/main.html">
+        <a class="listName zIndex" onclick="teacherInfo('0')">
           <div class="listElements">
             <div class="imgWraper">
               <img
@@ -50,11 +86,12 @@
               />
             </div>
             <div class="listName">
-              <p>John Doe</p>
+              <h3>Timothy Arnold</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
-        <a class="listName zIndex" href="./BioPages/Arnold/main.html">
+        <a class="listName zIndex" onclick="teacherInfo('1')">
           <div class="listElements">
             <div class="imgWraper">
               <img
@@ -64,11 +101,12 @@
               />
             </div>
             <div class="listName">
-              <p>John Doe</p>
+              <h3>Jeremy Pletz</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
-        <a class="listName zIndex" href="./BioPages/Arnold/main.html">
+        <a class="listName zIndex" onclick="teacherInfo('2')">
           <div class="listElements">
             <div class="imgWraper">
               <img
@@ -78,11 +116,12 @@
               />
             </div>
             <div class="listName">
-              <p>John Doe</p>
+              <h3>Stephen Langdon</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
-        <a class="listName zIndex" href="./BioPages/Arnold/main.html">
+        <a class="listName zIndex" onclick="teacherInfo('3')">
           <div class="listElements">
             <div class="imgWraper">
               <img
@@ -92,11 +131,12 @@
               />
             </div>
             <div class="listName">
-              <p>John Doe</p>
+              <h3>Sofia Feist</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
-        <a class="listName zIndex" href="./BioPages/Arnold/main.html">
+        <a class="listName zIndex" onclick="teacherInfo('4')">
           <div class="listElements">
             <div class="imgWraper">
               <img
@@ -106,13 +146,14 @@
               />
             </div>
             <div class="listName">
-              <p>John Doe</p>
+              <h3>Megan Tuertscher</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
       </div>
       <div class="list">
-        <a class="listName zIndex" href="./BioPages/Arnold/main.html">
+        <a class="listName zIndex" onclick="teacherInfo('12')">
           <div class="listElements">
             <div class="imgWraper">
               <img
@@ -122,11 +163,12 @@
               />
             </div>
             <div class="listName">
-              <p>John Doe</p>
+              <h3>Kelsey Randall</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
-        <a class="listName zIndex" href="./BioPages/Arnold/main.html">
+        <a class="listName zIndex" onclick="teacherInfo('5')">
           <div class="listElements">
             <div class="imgWraper">
               <img
@@ -136,11 +178,12 @@
               />
             </div>
             <div class="listName">
-              <p>John Doe</p>
+              <h3>Mark Fogelson</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
-        <a class="listName zIndex" href="./BioPages/Arnold/main.html">
+        <a class="listName zIndex" onclick="teacherInfo('6')">
           <div class="listElements">
             <div class="imgWraper">
               <img
@@ -150,11 +193,12 @@
               />
             </div>
             <div class="listName">
-              <p>John Doe</p>
+              <h3>Nadine Burpee</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
-        <a class="listName zIndex" href="./BioPages/Arnold/main.html">
+        <a class="listName zIndex" onclick="teacherInfo('7')">
           <div class="listElements">
             <div class="imgWraper">
               <img
@@ -164,11 +208,12 @@
               />
             </div>
             <div class="listName">
-              <p>John Doe</p>
+              <h3>Hank Ray</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
-        <a class="listName zIndex" href="./BioPages/Arnold/main.html">
+        <a class="listName zIndex" onclick="teacherInfo('8')">
           <div class="listElements">
             <div class="imgWraper">
               <img
@@ -178,7 +223,8 @@
               />
             </div>
             <div class="listName">
-              <p>John Doe</p>
+              <h3>Emily Conatser</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
@@ -195,11 +241,12 @@
               />
             </div>
             <div class="listName none">
-              <p>John Doe</p>
+              <h3>Greg Ulland</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
-        <a class="listName zIndex" href="./BioPages/Arnold/main.html">
+        <a class="listName zIndex" onclick="teacherInfo('10')">
           <div class="listElements">
             <div class="imgWraper">
               <img
@@ -209,11 +256,12 @@
               />
             </div>
             <div class="listName">
-              <p>John Doe</p>
+              <h3>Ashley Warren</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
-        <a class="listName zIndex" href="./BioPages/Arnold/main.html">
+        <a class="listName zIndex" onclick="teacherInfo('11')">
           <div class="listElements">
             <div class="imgWraper">
               <img
@@ -223,11 +271,12 @@
               />
             </div>
             <div class="listName">
-              <p>John Doe</p>
+              <h3>Trisha Underwood</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
-        <a class="listName zIndex" href="./BioPages/Arnold/main.html">
+        <a class="listName zIndex" onclick="teacherInfo('9')">
           <div class="listElements">
             <div class="imgWraper">
               <img
@@ -237,7 +286,8 @@
               />
             </div>
             <div class="listName">
-              <p>John Doe</p>
+              <h3>Greg Ulland</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
@@ -252,18 +302,77 @@
               />
             </div>
             <div class="listName none">
-              <p>John Doe</p>
+              <h3>John Doe</h3>
+              <p>leader</p>
             </div>
           </div>
         </a>
+      </div>
+      <div class="popUp">
+        <i class="fa-regular fa-circle-xmark x" onclick="infoClear()"></i>
+
+        <div class="wraper">
+          <div class="imageWraper">
+            <img
+              class="bioImagePopUp"
+              id="image"
+              src="../../../assets/PlackeholderBIo.jpg"
+              alt=""
+            />
+          </div>
+          <div class="bioText">
+            <h1 id="name"></h1>
+            <p id="text"></p>
+            <div id="line"></div>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="footer">
       <div class="footer">
         <div class="footer-social">
-          <a class="navLink" href="https://www.instagram.com/"> instagram </a>
-          <a class="navLink" href="https://www.facebook.com/"> facebook </a>
-          <a class="navLink" href="https://www.twitter.com/"> twitter </a>
+          <div class="footerSpace">
+            <a
+              class="navLink"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/"
+            >
+              <i
+                title="instagram link"
+                aria-hidden="true"
+                class="fa-brands fa-square-instagram"
+              ></i>
+            </a>
+          </div>
+          <div class="footerSpace">
+            <a
+              class="navLink"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/"
+            >
+              <i
+                title="facebook link"
+                aria-hidden="true"
+                class="fa-brands fa-square-facebook"
+              ></i>
+            </a>
+          </div>
+          <div class="footerSpace">
+            <a
+              class="navLink"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.twitter.com/"
+            >
+              <i
+                title="twitter link"
+                aria-hidden="true"
+                class="fa-brands fa-square-x-twitter"
+              ></i>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
