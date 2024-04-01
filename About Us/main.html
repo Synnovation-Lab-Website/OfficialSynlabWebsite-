@@ -43,7 +43,7 @@
     <div id="logoTop"><img src="../assets/LogoPlaceholder.png" alt="" /></div>
     <div class="underDescription">
       <div><h1>Sycamore + Innovation</h1></div>
-      <p>
+      <p id="aboutUsBlurb">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi
         id nobis praesentium explicabo ad eos autem suscipit numquam doloribus
         earum perferendis voluptates beatae porro, corporis commodi eaque
@@ -54,7 +54,10 @@
         dolor sit, amet consectetur adipisicing elit. Dolore nemo exercitationem
         cum suscipit saepe ratione hic aut animi facilis quae. Maiores
         praesentium recusandae, perspiciatis vitae quisquam voluptates odio quod
-        adipisci.
+        adipisci. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Maiores, delectus dolorem quidem accusantium natus officiis rem corrupti
+        numquam, aspernatur sequi exercitationem ullam. Cum voluptatem iusto
+        ipsum sunt itaque quaerat quo.
       </p>
     </div>
     <div class="pillars">
@@ -63,13 +66,13 @@
         role="button"
         onclick="searchTitleInJSON('test/popUpInfo.json', 'sections', 'Arnold')"
       >
-        <span class="text">Personalization</span>
+        <span class="text buttonSize">Personalization</span>
       </button>
       <button class="button-48" role="button" onclick="alert('test')">
         <span class="text">Community</span>
       </button>
       <button class="button-48" role="button" onclick="alert('test')">
-        <span class="text">Meaningful Learning</span>
+        <span class="text buttonSize">Meaningful Learning</span>
       </button>
     </div>
     <div class="info">
@@ -78,7 +81,7 @@
       <div class="list">
         <a class="listName zIndex" onclick="teacherInfo('Arnold');">
           <div class="listElements">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 src="../assets/PlackeholderBIo.jpg"
@@ -93,7 +96,7 @@
         </a>
         <a class="listName zIndex" onclick="teacherInfo('Langdon')">
           <div class="listElements">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 src="../assets/PlackeholderBIo.jpg"
@@ -108,7 +111,7 @@
         </a>
         <a class="listName zIndex" onclick="teacherInfo('Pletz')">
           <div class="listElements">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 src="../assets/PlackeholderBIo.jpg"
@@ -123,7 +126,7 @@
         </a>
         <a class="listName zIndex" onclick="teacherInfo('Ulland')">
           <div class="listElements">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 src="../assets/PlackeholderBIo.jpg"
@@ -138,7 +141,7 @@
         </a>
         <a class="listName zIndex" onclick="teacherInfo('Burpee')">
           <div class="listElements">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 src="../assets/PlackeholderBIo.jpg"
@@ -155,7 +158,7 @@
       <div class="list">
         <a class="listName zIndex" onclick="teacherInfo('Randall')">
           <div class="listElements">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 src="../assets/PlackeholderBIo.jpg"
@@ -170,7 +173,7 @@
         </a>
         <a class="listName zIndex" onclick="teacherInfo('Fogelson')">
           <div class="listElements">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 src="../assets/PlackeholderBIo.jpg"
@@ -185,7 +188,7 @@
         </a>
         <a class="listName zIndex" onclick="teacherInfo('Tuertscher')">
           <div class="listElements">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 src="../assets/PlackeholderBIo.jpg"
@@ -200,7 +203,7 @@
         </a>
         <a class="listName zIndex" onclick="teacherInfo('Feist')">
           <div class="listElements">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 src="../assets/PlackeholderBIo.jpg"
@@ -215,7 +218,7 @@
         </a>
         <a class="listName zIndex" onclick="teacherInfo('Conatser')">
           <div class="listElements">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 src="../assets/PlackeholderBIo.jpg"
@@ -232,7 +235,7 @@
       <div class="list">
         <a class="test listName none">
           <div class="listElements none">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 draggable="false"
@@ -248,7 +251,7 @@
         </a>
         <a class="listName zIndex" onclick="teacherInfo('Warren')">
           <div class="listElements">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 src="../assets/PlackeholderBIo.jpg"
@@ -263,7 +266,7 @@
         </a>
         <a class="listName zIndex" onclick="teacherInfo('Underwood')">
           <div class="listElements">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 src="../assets/PlackeholderBIo.jpg"
@@ -278,7 +281,7 @@
         </a>
         <a class="listName zIndex" onclick="teacherInfo('Ray')">
           <div class="listElements">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 src="../assets/PlackeholderBIo.jpg"
@@ -293,7 +296,7 @@
         </a>
         <a class="test listName none">
           <div class="listElements none">
-            <div class="imgWraper">
+            <div class="imgWrapper">
               <img
                 class="bioImage"
                 draggable="false"
@@ -311,8 +314,8 @@
       <div class="popUp">
         <i class="fa-regular fa-circle-xmark x" onclick="infoClear()"></i>
 
-        <div class="wraper">
-          <div class="imageWraper">
+        <div class="wrapper">
+          <div class="imageWrapper">
             <img
               class="bioImagePopUp"
               id="image"
