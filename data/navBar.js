@@ -56,5 +56,3 @@ window.addEventListener(
     animateLogos();
   }, 100)
 );
-
-//end of template JS
