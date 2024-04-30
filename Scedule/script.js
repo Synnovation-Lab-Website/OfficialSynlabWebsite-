@@ -16,9 +16,7 @@ function getScedule(factor) {
       let classHolder = bell.querySelectorAll(".class");
       classHolder.forEach((colorBar) => {
         let color = colorBar.querySelector(".colorBar");
-        let className = colorBar
-          .querySelector(".colorBar")
-          .getElementsByTagName("p")[0];
+        let className = colorBar.querySelector(".colorBar").getElementsByTagName("p")[0];
         //! sets the name of the class based on the schedule
         let classNameText = schedule[grade][dayCount][bellCount][0];
         if (classNameText != null) {

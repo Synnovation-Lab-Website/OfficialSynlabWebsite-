@@ -8,8 +8,7 @@ function throttle(callback, delay) {
   let timeout = null;
   let lastScrollPos = null;
   return function (...args) {
-    const currentScrollPos =
-      window.scrollY || document.documentElement.scrollTop;
+    const currentScrollPos = window.scrollY || document.documentElement.scrollTop;
     if (currentScrollPos !== lastScrollPos) {
       callback.apply(this, args);
       lastScrollPos = currentScrollPos;
