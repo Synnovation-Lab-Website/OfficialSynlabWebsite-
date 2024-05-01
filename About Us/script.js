@@ -5,6 +5,7 @@ const text = document.getElementById("text");
 const img = document.getElementById("img");
 const nameTeacher = document.getElementById("name");
 const body = document.getElementById("body");
+const html = document.getElementById("html");
 
 // Teacher info pop-up
 function teacherInfo(teacher) {
@@ -16,14 +17,16 @@ function teacherInfo(teacher) {
   popUp.style.top = scrollPos + "px";
   text.innerHTML = teacherBio[teacher].bio;
   nameTeacher.innerHTML = teacherBio[teacher].name;
-  img.src = teacherBio[teacher].img;
+  // img.src = teacherBio[teacher].img;
   body.style.overflow = "hidden";
+  html.style.overflow = "hidden";
 }
 
 // Close the pop-up
 function infoClear() {
   popUp.classList.remove("custom-class-popUp");
-  body.style.overflow = "scroll";
+  // body.style.overflow = "scroll";
+  html.style.overflowY = "scroll";
   x.style.cursor = "default";
   setTimeout(function () {
     popUp.style.zIndex = "-1";

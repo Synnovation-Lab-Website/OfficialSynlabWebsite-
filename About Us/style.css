@@ -1,3 +1,7 @@
+.footer {
+  margin-bottom: 2.5vh;
+}
+
 .title {
   font-size: calc(2vw + 2vh + 1vmin);
   font-weight: 700;
@@ -280,5 +284,5 @@
 }
 
 #title h1 {
-  letter-spacing: -0.003em;
+  letter-spacing: -0.02em;
 }
