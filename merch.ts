@@ -19,7 +19,7 @@ dataPromise.then((response) => {
     js_file_output += "\t[\"" + imageSources[i] + "\", \"" + merchNames[i] + "\"], \n";
   }
   js_file_output += "];";
-  writeFileSync("./Merch/sources.js", js_file_output, "utf8");
+  writeFileSync("./merch/sources.js", js_file_output, "utf8");
 });
 
 let imageSources: string[] = [];

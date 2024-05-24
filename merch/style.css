@@ -11,8 +11,10 @@
 .merchDisplayElement {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  flex-direction: column;
+  align-content: center;
 
   div:hover {
     transform: scale(1.1);
@@ -24,8 +26,10 @@
     flex-direction: row;
     width: 28vw;
     height: 17vh;
-    margin-top: 1.5vw;
-    margin-bottom: 1.5vw;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s cubic-bezier(0.44, 0.4, 0.26, 0.7);
