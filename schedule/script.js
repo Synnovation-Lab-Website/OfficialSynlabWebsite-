@@ -5,7 +5,7 @@ const gradeSelector = document.querySelector(".scheduleGrade");
 const classKeep = "colorBar";
 let grade = parseInt(gradeSelector.getAttribute("data-grade"));
 
-function getScedule(factor) {
+function getSchedule(factor) {
   grade += factor;
   grade = setGrade(grade);
   let dayCount = 0;

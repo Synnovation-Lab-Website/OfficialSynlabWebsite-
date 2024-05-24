@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../favicon.ico" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../data/templateCSS.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@700&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/243589e6ae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navLink"><a href="../schedule/main.html">Schedule</a></div>
+      <div class="navLink"><a href="../faq/main.html">FAQ</a></div>
+      <div class="logo">
+        <div class="test">
+          <a class="logoLarge" href="../main.html"><img src="../assets/logo.svg" alt="" /></a>
+          <a class="logoSmall" href="../main.html"><img src="../assets/logoSmall.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="navLink"><a href="../about_us/main.html">About Us</a></div>
+      <div class="navLink"><a href="../merch/main.html">Merch</a></div>
+    </nav>
+  </header>
+  <main>
+    <h1 class="title">title</h1>
+    <div class="schedule">
+      <div class="gradeSlector">
+        <i class="fa-solid fa-less-than buttons" onclick="getSchedule(-1)"></i>
+        <h3 class="scheduleGrade" data-grade="9">9th Grade Schedule</h3>
+        <i class="fa-solid fa-greater-than buttons" onclick="getSchedule(1)"></i>
+      </div>
+      <div class="wrapper">
+        <h3 id="bells">Bells</h3>
+        <div class="weekDay monday">
+          <div class="box">
+            <div class="inner bell">
+              <p class="bell">1</p>
+            </div>
+            <div class="inner days">
+              <p class="days">Mon</p>
+            </div>
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Spanish 3</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner bell">
+              <p class="bell">2</p>
+            </div>
+            <div class="inner class">
+              <div class="colorBar history">
+                <p>World History</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner bell">
+              <p class="bell">3</p>
+            </div>
+            <div class="inner class">
+              <div class="colorBar">
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner bell">
+              <p class="bell">4</p>
+            </div>
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Woodworking</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner bell">
+              <p class="bell">5</p>
+            </div>
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner bell">
+              <p class="bell">6</p>
+            </div>
+            <div class="inner class">
+              <div class="colorBar">
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner bell">
+              <p class="bell">7</p>
+            </div>
+            <div class="inner class">
+              <div class="colorBar english">
+                <p>English 9</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="weekDay tuesday">
+          <div class="box">
+            <div class="inner days">
+              <p class="days">Tues</p>
+            </div>
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Spanish 3</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar">
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar math">
+                <p>Geometry</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Woodworking</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar science">
+                <p>Biology</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="weekDay wednesday">
+          <div class="box">
+            <div class="inner days">
+              <p class="days">Wed</p>
+            </div>
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Spanish 3</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar history">
+                <p>World History</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar">
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Woodworking</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar">
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar english">
+                <p>English 9</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="weekDay thursday">
+          <div class="box">
+            <div class="inner days">
+              <p class="days">Thurs</p>
+            </div>
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Spanish 3</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar">
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar math">
+                <p>Geometry</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Woodworking</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar science">
+                <p>Biology</p>
+              </div>
+            </div>
+          </div>
+          <div class="box"></div>
+        </div>
+        <div class="weekDay friday">
+          <div class="box">
+            <div class="inner days">
+              <p class="days">Fri</p>
+            </div>
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Spanish 3</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar">
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar">
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Woodworking</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar nonLab">
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar">
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inner class">
+              <div class="colorBar">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer">
+      <div class="footer-social">
+        <div class="footerSpace">
+          <a class="navLink" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
+            <i title="instagram link" aria-hidden="true" class="fa-brands fa-square-instagram footIcon"></i>
+          </a>
+        </div>
+        <div class="footerSpace">
+          <a class="navLink" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
+            <i title="facebook link" aria-hidden="true" class="fa-brands fa-square-facebook footIcon"></i>
+          </a>
+        </div>
+        <div class="footerSpace">
+          <a class="navLink" target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/">
+            <i title="twitter link" aria-hidden="true" class="fa-brands fa-square-x-twitter footIcon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="../data/navBar.js"></script>
+<script src="../data/data.js"></script>
+<script src="script.js"></script>
+
+</html>
