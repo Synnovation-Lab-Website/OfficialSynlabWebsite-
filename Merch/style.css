@@ -1,0 +1,22 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+}
+
+.merchDisplayElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.merchDisplayElement img {
+  margin-left: 1vh;
+  margin-right: 1vh;
+  border: 1vh solid black;
+  border-radius: 1.5vh;
+}
