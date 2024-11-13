@@ -62,7 +62,7 @@
   grid-template-areas: "inner-div";
 }
 
-.box:hover {
+.boxHover {
   transform: scale(1.03);
 }
 
@@ -133,4 +133,9 @@
 
 #bells {
   margin-bottom: 1vh;
+}
+
+.open {
+  transition: 0.3s cubic-bezier(0.44, 0.4, 0.26, 0.7);
+  transform: scale(1.3);
 }

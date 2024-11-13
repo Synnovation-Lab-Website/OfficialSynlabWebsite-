@@ -58,5 +58,95 @@ main {
 
 .open {
   transition: 0.3s cubic-bezier(0.44, 0.4, 0.26, 0.7);
-  transform: rotatey(180deg);
+  /* color: #00000000; */
+}
+
+.faqText {
+  transition: 0.3s cubic-bezier(0.44, 0.4, 0.26, 0.7);
+  color: #00000000;
+}
+
+.outsideText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scale {
+  z-index: 500;
+  transform: scalex(3.3) scaleY(2.1);
+}
+
+.hide {
+  transition: 0.3s cubic-bezier(0.44, 0.4, 0.26, 0.7);
+  transform: scalex(0) scaleY(0);
+}
+
+.zindex {
+  z-index: 50000;
+}
+
+.card1 {
+  transform-origin: top left;
+}
+
+.card2 {
+  transform-origin: top;
+}
+
+.card3 {
+  transform-origin: top right;
+}
+
+.card4 {
+  transform-origin: bottom left;
+}
+
+.card5 {
+  transform-origin: bottom;
+}
+
+.card6 {
+  transform-origin: bottom right;
+}
+
+#faqText {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: fit-content;
+  height: fit-content;
+  z-index: 5000000;
+  position: absolute;
+  transition: 0.3s cubic-bezier(0.44, 0.4, 0.26, 0.7);
+}
+
+#card1 {
+  /* transform-origin: top left; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  transform-origin: top left;
+}
+
+#card1 h1 {
+  font-size: calc(1.5vw + 1.5vh + 0.5vmin);
+  font-weight: 700;
+  margin-bottom: 1vh;
+}
+
+#card1 p {
+  font-size: calc(0.75vw + 0.75vh + 0.25vmin);
+  font-weight: 500;
+}
+
+.hideAnswer {
+  transition: 0.3s cubic-bezier(0.44, 0.4, 0.26, 0.7);
+  color: #00000000;
+  transform: scale(0.5);
 }

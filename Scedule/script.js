@@ -2,6 +2,7 @@
 const wrapper = document.querySelector(".wrapper");
 const weekDay = document.querySelectorAll(".weekDay");
 const gradeSelector = document.querySelector(".scheduleGrade");
+const boxElement = document.querySelectorAll(".box");
 const classKeep = "colorBar";
 let grade = parseInt(gradeSelector.getAttribute("data-grade"));
 
@@ -53,3 +54,43 @@ function setGrade(grade) {
     return grade;
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  boxElement.forEach(function (card) {
+    card.addEventListener("click", function (event) {
+      event.stopPropagation(); // Prevent the click event from bubbling up
+
+      if (this.classList.contains("open")) {
+        this.classList.remove("open");
+      } else {
+        boxElement.forEach(function (c) {
+          c.classList.remove("open");
+        });
+        this.classList.add("open");
+      }
+    });
+  });
+
+  // Add a click event listener to the document to close the card when clicking outside
+  document.addEventListener("click", function (event) {
+    if (!event.target.closest(".element-card")) {
+      boxElement.forEach(function (card) {
+        card.classList.remove("open");
+      });
+    }
+  });
+});
+
+boxElement.forEach((box) => {
+  box.addEventListener("mouseover", function () {
+    box.classList.add(".boxHover");
+  });
+
+  var event = new MouseEvent("mouseover", {
+    view: window,
+    bubbles: true,
+    cancelable: true,
+  });
+
+  box.dispatchEvent(event);
+});
